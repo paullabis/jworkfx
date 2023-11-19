@@ -1,0 +1,77 @@
+{
+  "name": "SampleWorkflow",
+  "description": "Description for Workflow1",
+  "tasks": [
+    {
+      "type": "START",
+      "name": "StartTask",
+      "description": "Start of the workflow",
+      "beanId": "startBean",
+      "nextPath": [
+        {
+          "name": "Path1",
+          "destinationTaskName": "Task1"
+        },
+        {
+          "name": "Path2",
+          "destinationTaskName": "Task2"
+        }
+      ]
+    },
+    {
+      "type": "SERVICE",
+      "name": "Task1",
+      "description": "Service Task 1",
+      "beanId": "task1Bean",
+      "nextPath": [
+        {
+          "name": "Path3",
+          "destinationTaskName": "Task3"
+        }
+      ]
+    },
+    {
+      "type": "SERVICE",
+      "name": "Task2",
+      "description": "Service Task 2",
+      "beanId": "task2Bean",
+      "nextPath": [
+        {
+          "name": "Path4",
+          "destinationTaskName": "Task4"
+        }
+      ]
+    },
+    {
+      "type": "SERVICE",
+      "name": "Task3",
+      "description": "Service Task 3",
+      "beanId": "task3Bean",
+      "nextPath": [
+        {
+          "name": "Path5",
+          "destinationTaskName": "EndTask"
+        }
+      ]
+    },
+    {
+      "type": "SERVICE",
+      "name": "Task4",
+      "description": "Service Task 4",
+      "beanId": "task4Bean",
+      "nextPath": [
+        {
+          "name": "Path6",
+          "destinationTaskName": "EndTask"
+        }
+      ]
+    },
+    {
+      "type": "END",
+      "name": "EndTask",
+      "description": "End of the workflow",
+      "beanId": "endBean",
+      "nextPath": []
+    }
+  ]
+}

@@ -10,4 +10,6 @@ public class WorkflowProperties {
 
     private boolean enable;
 
+    private String[] definitions;
+
 }
