@@ -8,9 +8,7 @@ import java.util.List;
 @Data
 @Builder
 public class Workflow {
-
     private String name;
     private String description;
-    private List<Task> tasks;
-
+    private List<Task> nextPaths;
 }
