@@ -1,5 +1,5 @@
 package com.jworkfx.workflow.domain.constant;
 
 public enum TaskType {
-    SERVICE, RECEIVE
+    START, SERVICE, RECEIVE, END
 }
