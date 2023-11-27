@@ -24,6 +24,6 @@ public class JsonDefinitionParserTest {
 
         assertThat(workflowOptional).isPresent();
         Workflow workflow = workflowOptional.get();
-        assertThat(workflow.getName()).isEqualTo("Workflow1");
+        assertThat(workflow.getId()).isEqualTo("Workflow1");
     }
 }

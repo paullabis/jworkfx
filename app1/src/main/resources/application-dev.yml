@@ -1,9 +1,11 @@
 spring:
-  datasource:
-    url: jdbc:mysql://gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/test
-    username: 333kDHq9cR41YDy.root
-    password: THo0vN1V3k29xaGm
-    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    mongodb:
+      host: localhost              # MongoDB server hostname or IP address
+      port: 27017                  # MongoDB server port
+      database: app1               # Name of the MongoDB database
+      username: app_root           # MongoDB username (if authentication is enabled)
+      password: app_r00t           # MongoDB password (if authentication is enabled)
 
 workflow:
   enable: true

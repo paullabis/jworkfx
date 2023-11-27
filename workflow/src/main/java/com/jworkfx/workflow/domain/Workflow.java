@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Workflow {
-    private String name;
+    private String id;
     private String description;
     private List<Task> tasks;
 }

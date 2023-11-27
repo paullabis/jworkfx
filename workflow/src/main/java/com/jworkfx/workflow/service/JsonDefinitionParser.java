@@ -25,7 +25,7 @@ public class JsonDefinitionParser {
             }
 
             final Workflow workflow = objectMapper.readValue(inputStream, Workflow.class);
-            log.info("Success parsing workflow '{}'", workflow.getName());
+            log.info("Success parsing workflow '{}'", workflow.getId());
             return Optional.of(workflow);
         } catch (Exception ex) {
             log.error("parseJsonDefinition failed: {}", ex.getMessage());

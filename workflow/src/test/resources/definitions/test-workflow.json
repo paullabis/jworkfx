@@ -1,5 +1,5 @@
 {
-  "name": "Workflow1",
+  "id": "Workflow1",
   "description": "Description for Workflow1",
   "tasks": [
     {

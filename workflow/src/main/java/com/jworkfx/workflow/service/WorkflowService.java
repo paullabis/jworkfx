@@ -18,7 +18,7 @@ public class WorkflowService {
     private final JsonDefinitionParser jsonDefinitionParser;
     private final WorkflowProperties workflowProperties;
 
-    private Map<String, Workflow> workflows = new HashMap<>();
+    private final Map<String, Workflow> workflows = new HashMap<>();
 
     public WorkflowService(
             final JsonDefinitionParser jsonDefinitionParser,
@@ -34,8 +34,8 @@ public class WorkflowService {
     public boolean isEnable() {
         return this.workflowProperties.isEnable();
     }
-    public Workflow getWorkflowByName(final String name) {
-        return workflows.get(name);
+    public Workflow getWorkflowById(final String id) {
+        return workflows.get(id);
     }
 
     public List<Workflow> getAllWorkflows() {
@@ -50,7 +50,7 @@ public class WorkflowService {
         }
         for (final String workflowDefinition : workflowDefinitions) {
             jsonDefinitionParser.parseJsonDefinition(workflowDefinition)
-                    .ifPresent(workflow -> workflows.put(workflow.getName(), workflow));
+                    .ifPresent(workflow -> workflows.put(workflow.getId(), workflow));
         }
     }
 }
