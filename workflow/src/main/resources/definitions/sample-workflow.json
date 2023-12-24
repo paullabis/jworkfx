@@ -11,10 +11,6 @@
         {
           "name": "Path1",
           "destinationTaskName": "Task1"
-        },
-        {
-          "name": "Path2",
-          "destinationTaskName": "Task2"
         }
       ]
     },

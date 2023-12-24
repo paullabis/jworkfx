@@ -7,6 +7,5 @@ import com.jworkfx.workflow.constant.deserializer.TaskTypeDeserializer;
 public enum TaskType {
     START,
     SERVICE,
-    RECEIVE,
     END
 }

@@ -6,3 +6,4 @@ workflow:
   definitions:
     - definitions/sample-workflow.json
   enable: true
+  thread-pool-size: 10

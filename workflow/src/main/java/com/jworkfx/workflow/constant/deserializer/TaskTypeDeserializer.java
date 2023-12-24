@@ -20,9 +20,6 @@ public class TaskTypeDeserializer extends JsonDeserializer<TaskType> {
             case "SERVICE":
                 taskType = TaskType.SERVICE;
                 break;
-            case "RECEIVE":
-                taskType = TaskType.RECEIVE;
-                break;
             case "END":
                 taskType = TaskType.END;
                 break;
