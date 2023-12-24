@@ -1,13 +1,9 @@
-package com.jworkfx.app1;
+package com.jworkfx.workflow;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication(scanBasePackages = {
-        "com.jworkfx.app1",
-        "com.jworkfx.workflow"
-})
+@SpringBootApplication
 public class App1 {
 
     public static void main(String[] args) {

@@ -1,0 +1,49 @@
+{
+  "id": "HelloWorkflow",
+  "description": "A workflow that say hello to random people.",
+  "tasks": [
+    {
+      "type": "START",
+      "name": "StartTask",
+      "description": "Start of the workflow",
+      "beanId": "startBean",
+      "nextPath": [
+        {
+          "name": "LogHelloPath",
+          "destinationTaskName": "LogHelloTask"
+        }
+      ]
+    },
+    {
+      "type": "SERVICE",
+      "name": "LogHelloTask",
+      "description": "Service Task 1",
+      "beanId": "com.jworkfx.app1.tasks.LogHelloTask",
+      "nextPath": [
+        {
+          "name": "LogRandomNamePath",
+          "destinationTaskName": "LogRandomNameTask"
+        }
+      ]
+    },
+    {
+      "type": "SERVICE",
+      "name": "LogRandomNameTask",
+      "description": "Service Task 1",
+      "beanId": "com.jworkfx.app1.tasks.LogRandomNameTask",
+      "nextPath": [
+        {
+          "name": "EndTaskPath",
+          "destinationTaskName": "EndTask"
+        }
+      ]
+    },
+    {
+      "type": "END",
+      "name": "EndTask",
+      "description": "End of the workflow",
+      "beanId": "endBean",
+      "nextPath": []
+    }
+  ]
+}
