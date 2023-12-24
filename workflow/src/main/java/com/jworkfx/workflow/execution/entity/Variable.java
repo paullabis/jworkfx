@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-@Document
+@Document(collection = "variable")
 public class Variable extends AuditableEntity {
     private String workflowExecutionId;
     private String name;

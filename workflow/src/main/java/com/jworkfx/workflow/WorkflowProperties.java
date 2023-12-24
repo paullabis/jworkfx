@@ -12,4 +12,6 @@ public class WorkflowProperties {
 
     private String[] definitions;
 
+    private int threadPoolSize;
+
 }

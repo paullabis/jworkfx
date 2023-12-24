@@ -5,7 +5,6 @@ import com.jworkfx.workflow.constant.deserializer.TaskTypeDeserializer;
 
 @JsonDeserialize(using = TaskTypeDeserializer.class)
 public enum VariableType {
-    STRING,
-    BOOLEAN,
-    DECIMAL
+    STRING, BOOLEAN, INTEGER, LONG, DOUBLE, BIG_DECIMAL
+
 }

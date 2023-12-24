@@ -8,9 +8,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-@Document
+@Document(collection = "execution_log")
 public class ExecutionLog extends AuditableEntity {
-    private String workflowId;
+    private String workflowExecutionId;
     private String task;
     private String message;
     private long duration;

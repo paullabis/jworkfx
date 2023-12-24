@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-@Document
+@Document(collection = "workflow_execution")
 public class WorkflowExecution extends AuditableEntity {
     private String workflowId;
     private WorkflowExecutionStatus status;
@@ -17,5 +17,4 @@ public class WorkflowExecution extends AuditableEntity {
     private long startTime;
     private long endTime;
     private String currentTask;
-
 }
